@@ -74,10 +74,6 @@ header nav .menu {
   justify-content: space-between;
   align-items: center;
 }
-header nav .menu a:hover {
-  padding: 8px;
-  background-color: #f6dce6;
-}
 header nav .menu .textomenu {
   font-family: "bebas neue";
   font-size: 25px;
@@ -85,6 +81,10 @@ header nav .menu .textomenu {
   margin: 1px;
   text-decoration: none;
   color: #918f91;
+}
+header nav .menu .textomenu:hover {
+  padding: 8px;
+  background-color: #f6dce6;
 }
 
 /*frase inicio*/
@@ -110,14 +110,6 @@ main nav div h2 .listainicio {
   margin: 25px;
   opacity: 70%;
 }
-main nav div h2 a:hover {
-  font-weight: lighter;
-  height: 10px;
-  padding: 1px 10px;
-  background-color: #F4E7EC;
-  opacity: 50%;
-  border-radius: 10px;
-}
 main nav div h2 a {
   text-decoration: none;
   color: black;
@@ -129,6 +121,14 @@ main nav div h2 a {
   padding: 10px;
   margin: 25px 50px;
   border-radius: 30px;
+}
+main nav div h2 a:hover {
+  font-weight: lighter;
+  height: 10px;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border-radius: 10px;
 }
 
 /*pie de pagina*/
@@ -151,19 +151,19 @@ footer .redesfooter {
   flex-direction: row;
   justify-content: space-around;
 }
-footer .redesfooter a:hover {
+footer .redesfooter a .footerr {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+  margin: 5px;
+}
+footer .redesfooter a .footerr:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
   background-color: #F4E7EC;
   opacity: 50%;
   border-radius: 10px;
-}
-footer .redesfooter a .footerr {
-  height: 45px;
-  width: 45px;
-  padding: 5px;
-  margin: 5px;
 }
 footer .pie-de-pagina {
   font-family: "julius";
@@ -221,7 +221,7 @@ footer .pie-de-pagina {
     font-size: 12px;
     padding: 5px 9px;
   }
-  header nav .menu a:hover {
+  header nav .menu .textomenu:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;

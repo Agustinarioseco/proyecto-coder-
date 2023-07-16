@@ -33,11 +33,6 @@ header{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            a:hover {
-                font-weight:map-get($hover-inicio , lighter);
-                padding:map-get($hover-inicio, padding);
-                background-color:map-get($hover-inicio, background);
-            }
             .textomenu {
                 font-family:$titulos-importantes;
                 font-size: 25px;
@@ -45,6 +40,11 @@ header{
                 margin: 1px;
                 text-decoration: none;
                 color:$textos-importantes;
+                &:hover {
+                    font-weight:map-get($hover-inicio , lighter);
+                    padding:map-get($hover-inicio, padding);
+                    background-color:map-get($hover-inicio, background);
+                }
             }
         }
     }
@@ -78,9 +78,6 @@ main{
                     margin: 25px;
                     opacity: 70%;
                 }
-                a:hover {
-                    @include hover;
-                }
                 a{
                     text-decoration: none;
                     color: $textos-secundarios;
@@ -92,6 +89,9 @@ main{
                     padding: 10px;
                     margin: 25px 50px;
                     border-radius: 30px;
+                    &:hover {
+                        @include hover;
+                    }
                 }
             }
         }
@@ -115,12 +115,12 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        a:hover {
-            @include hover;
-        }
         a{
             .footerr{
                 @include sizes-iconos;
+                &:hover {
+                    @include hover;
+                }
             }
         }
     }
@@ -182,9 +182,9 @@ header{
                 justify-items: start;
                 font-size: 12px;
                 padding: 5px 9px;
-            }
-            a:hover {
-                @include hover;
+                &:hover {
+                    @include hover;
+                }
             }
         }
     }
