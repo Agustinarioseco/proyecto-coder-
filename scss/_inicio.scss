@@ -44,6 +44,7 @@ header{
                     font-weight:map-get($hover-inicio , lighter);
                     padding:map-get($hover-inicio, padding);
                     background-color:map-get($hover-inicio, background);
+                    border-radius: map-get($hover-inicio, border);
                 }
             }
         }
@@ -118,9 +119,9 @@ footer {
         a{
             .footerr{
                 @include sizes-iconos;
-                &:hover {
-                    @include hover;
-                }
+            }
+            &:hover {
+                @include hover;
             }
         }
     }

@@ -28,9 +28,6 @@ main{
                 padding: 15px;
                 margin: 15px 20px;
                 border-radius: 10px;
-                a:hover {
-                    @include hover;
-                }
                 .iconos {
                    @include sizes-iconos;
                 }
@@ -38,6 +35,9 @@ main{
                     text-align: start;
                     color: $textos-secundarios;
                     text-decoration: none;
+                    &:hover {
+                        @include hover;
+                    }
                 }
             }
         }
@@ -114,14 +114,14 @@ main{
                     width: 500px;
                     padding: 15px;
                     margin: 10px;
-                    a:hover {
-                        @include hover;
-                    }
                     .iconos {
                         @include sizes-iconos;
                     }  
                     .texto6 {
                         font-size: 20px;
+                        &:hover {
+                            @include hover;
+                        }
                     }
                 }
             }
@@ -182,9 +182,6 @@ main{
                     width: 300px;
                     padding: 15px;
                     margin: 10px;
-                    a:hover {
-                        @include hover;
-                    }
                     .iconos {
                         height: 30px;
                         width: 30px;
@@ -193,6 +190,9 @@ main{
                     }
                     .texto6 {
                         font-size: 12px;
+                        a:hover {
+                            @include hover;
+                        }
                     }
                 }
             }

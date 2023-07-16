@@ -25,11 +25,10 @@ $font-15px: 15px;
 }
 @mixin hover{
     font-weight: lighter;
-    height: 10px;
     padding: 1px 10px;
     background-color:$fondo-menu-footer;
     opacity: 50%;
-    border-radius: 10px;
+    border: 10px;
 }
 @mixin proyecto-sizes{
     height: 350px;
@@ -62,6 +61,7 @@ $hover-inicio: (
     weight: lighter,
     padding: 8px,
     background: #f6dce6,
+    border: 15px,
 );
 $parrafo: (
     overflow: hidden,

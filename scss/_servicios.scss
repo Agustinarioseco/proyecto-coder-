@@ -61,15 +61,15 @@ main {
                 padding: 5px;
                 margin: 15px;
                 border-radius: 15px;
-                a:hover {
-                    @include hover;
-                }
                 .textoboton {
                     text-decoration: none;
                     color: $textos-secundarios;
                     font-size:$font-20px;
                     padding: 1px;
                     margin: 1px;
+                    &:hover {
+                        @include hover;
+                    }
                 }
             }
         }
@@ -118,11 +118,11 @@ main {
                     padding: 5px;
                     margin: 10px;
                     border-radius: 10px;
-                    a:hover {
-                        @include hover;
-                    }
                     .textoboton {
                         font-size: 15px;
+                        &:hover {
+                            @include hover;
+                        }
                     }
                 }
             }
@@ -172,11 +172,11 @@ main {
                 .boton {
                     @include servicios-size;
                     border-radius: 10px;
-                    a:hover {
-                        @include hover;
-                    }
                     .textoboton {
                         font-size: $font-15px;
+                        a:hover {
+                            @include hover;
+                        }
                     }
                 }
             }
