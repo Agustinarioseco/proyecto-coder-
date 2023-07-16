@@ -16,12 +16,15 @@ body {
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100%;
 }
+
 .header {
   grid-area: header;
 }
+
 .main {
   grid-area: main;
 }
+
 .footer {
   grid-area: footer;
 }
@@ -44,7 +47,8 @@ body {
   grid-template-columns: 140px 1fr;
   grid-template-rows: 135px;
 }
-.imagen-logo {
+
+header section a .imagen-logo {
   grid-area: imagen-logo;
   background-color: #F4E7EC;
   height: 130px;
@@ -52,11 +56,11 @@ body {
   padding: 2px;
   margin: 2px;
 }
-.menu {
-  overflow: hidden;
-  grid-area: menu;
+header nav .menu {
   text-decoration: none;
   list-style-type: none;
+  overflow: hidden;
+  grid-area: menu;
   height: 140px;
   padding: 40px 10px;
   margin: 10px 5px;
@@ -65,7 +69,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.textomenu {
+header nav .menu a:hover {
+  font-weight: lighter;
+  padding: 8px;
+  background-color: #f6dce6;
+  color: #918f91;
+}
+header nav .menu .textomenu {
   font-family: "bebas neue";
   font-size: 25px;
   padding: 40px 10px;
@@ -73,15 +83,9 @@ body {
   text-decoration: none;
   color: #918f91;
 }
-a:hover {
-  font-weight: lighter;
-  padding: 8px;
-  background-color: #f6dce6;
-  color: #918f91;
-}
+
 /*frase inicio*/
 /*listas de la pagina de incio*/
-
 main div h2 {
   color: black;
   font-family: "julius";
@@ -95,7 +99,7 @@ main div h2 {
   margin: 25px 50px;
   border-radius: 30px;
 }
-.listainicio {
+main nav div h2 .listainicio {
   background-color: #e8a197;
   color: black;
   height: 90px;
@@ -103,7 +107,7 @@ main div h2 {
   margin: 25px;
   opacity: 70%;
 }
-h2 a {
+main nav div h2 a {
   text-decoration: none;
   color: black;
   font-family: "julius";
@@ -122,7 +126,7 @@ footer {
   background-color: #F4E7EC;
   opacity: 80%;
 }
-h6 {
+footer h6 {
   font-family: "bebas neue";
   color: #918f91;
   text-align: center;
@@ -131,16 +135,16 @@ h6 {
   padding: 10px;
   margin: 10px;
 }
-.redesfooter {
+footer .redesfooter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.footerr {
+footer .redesfooter a .footerr {
   height: 45px;
   width: 45px;
 }
-.pie-de-pagina {
+footer .pie-de-pagina {
   font-family: "julius";
   color: black;
   font-size: 20px;
@@ -151,23 +155,23 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
-#grilla {
+  #grilla {
     overflow-x: hidden;
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
   }
-.header {
+  .header {
     grid-area: header;
   }
-.main {
+  .main {
     grid-area: main;
   }
-.footer {
+  .footer {
     grid-area: footer;
   }
   /*menu de incio*/
-#header {
+  #header {
     background-color: #F4E7EC;
     width: 100%;
     display: grid;
@@ -176,30 +180,31 @@ h6 {
     grid-template-rows: 120px 40px;
     justify-items: center;
   }
-.imagen-logo {
+  header section .imagen-logo {
     grid-area: imagen-logo;
     background-color: #F4E7EC;
     height: 120px;
     width: 120px;
     padding: 5px 1px 1px;
   }
-.menu {
+  header nav .menu {
     grid-area: menú;
     justify-items: start;
     height: 40px;
     padding: 15px;
     margin: 1px 5px;
   }
-.textomenu {
+  header nav .menu .textomenu {
     grid-area: menu;
     justify-items: start;
     font-size: 12px;
     padding: 5px 9px;
   }
-  a:hover {
+  header nav .menu a:hover {
     padding: 5px;
   }
   /*frase inicio*/
+  /*listas de la pagina de incio*/
   main div h2 {
     font-size: 20px;
     height: 60px;
@@ -207,14 +212,13 @@ h6 {
     margin: 15px 20px;
     border-radius: 15px;
   }
-  /*listas de la pagina de incio*/
- .listainicio{
+  main nav div h2 .listainicio {
     height: 60px;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
   }
-  h2 a {
+  main nav div h2 a {
     color: black;
     font-family: "julius";
     font-size: 15px;
@@ -228,29 +232,28 @@ h6 {
   footer h6 {
     font-size: 25px;
   }
-  .footerr {
+  footer .footerr {
     height: 35px;
     width: 35px;
   }
-  .pie-de-pagina {
+  footer .pie-de-pagina {
     font-size: 12px;
     padding: 10px 5px 5px;
     margin: 10px 10px 5px;
   }
 }
 /******SOBRE MI******/
-/*contenido del main*/
-#sobremi-main {
+main #sobremi-main {
   overflow-x: hidden;
   display: grid;
   grid-template-areas: "carrusel parrafo";
   grid-template-columns: repeat(2 1fr);
 }
-.carrusel {
+main div .carrusel {
   grid-area: carrusel;
   margin: 10px;
 }
-.parrafo {
+main .parrafo {
   overflow: hidden;
   grid-area: parrafo;
   font-family: "julius";
@@ -264,28 +267,27 @@ h6 {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
- #sobremi-main {
+  main #sobremi-main {
     display: grid;
     grid-template-areas: "carrusel" "parrafo";
     grid-template-rows: repeat(2 1fr);
     justify-items: center;
   }
-.carrusel {
+  main div .carrusel {
     grid-area: carrusel;
     width: 300px;
     margin: 10px;
   }
-.parrafo {
+  main .parrafo {
     grid-area: parrafo;
     font-size: 12px;
     width: 300px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 15px;
   }
 }
 /*****PROYECTOS*****/
-/*pagina proyectos*/
 #pagina-proyecto {
   display: grid;
   grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
@@ -293,25 +295,26 @@ h6 {
   grid-template-rows: 2 1fr;
   justify-items: center;
 }
-.proyecto1 {
+#pagina-proyecto .proyecto1 {
   grid-area: proyecto1;
 }
-.proyecto2 {
+#pagina-proyecto .proyecto2 {
   grid-area: proyecto2;
 }
-.proyecto3 {
+#pagina-proyecto .proyecto3 {
   grid-area: proyecto3;
 }
-.proyecto4 {
+#pagina-proyecto .proyecto4 {
   grid-area: proyecto4;
 }
-.proyecto5 {
+#pagina-proyecto .proyecto5 {
   grid-area: proyecto5;
 }
-.proyecto6 {
+#pagina-proyecto .proyecto6 {
   grid-area: proyecto6;
 }
-div h4 {
+
+main section div h4 {
   font-family: "bebas neue";
   font-size: 30px;
   color: black;
@@ -323,13 +326,13 @@ div h4 {
   margin: 10px 50px;
   border-radius: 15px;
 }
-.carrusel-imagen {
+main section div .carrusel-imagen {
   height: 350px;
   width: 350px;
   padding: 10px;
   margin: 10px 50px;
 }
-.texto-proyecto {
+main section .texto-proyecto {
   font-family: "julius";
   font-size: 15px;
   color: black;
@@ -343,32 +346,32 @@ div h4 {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
- #pagina-proyecto {
+  #pagina-proyecto {
     display: grid;
     grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
     grid-template-columns: repeat(1fr);
     grid-template-rows: 6 1fr;
     justify-items: center;
   }
-  .proyecto1 {
+  #pagina-proyecto .proyecto1 {
     grid-area: proyecto1;
   }
- .proyecto2 {
+  #pagina-proyecto .proyecto2 {
     grid-area: proyecto2;
   }
- .proyecto3 {
+  #pagina-proyecto .proyecto3 {
     grid-area: proyecto3;
   }
- .proyecto4 {
+  #pagina-proyecto .proyecto4 {
     grid-area: proyecto4;
   }
- .proyecto5 {
+  #pagina-proyecto .proyecto5 {
     grid-area: proyecto5;
   }
-.proyecto6 {
+  #pagina-proyecto .proyecto6 {
     grid-area: proyecto6;
   }
-div h4 {
+  main section div h4 {
     font-size: 20px;
     width: 300px;
     height: 25px;
@@ -376,13 +379,13 @@ div h4 {
     margin: 10px;
     border-radius: 10px;
   }
-.carrusel-imagen {
+  main section div .carrusel-imagen {
     height: 300px;
     width: 300px;
     padding: 10px;
     margin: 10px;
   }
-.texto-proyecto {
+  main section div .texto-proyecto {
     font-size: 12px;
     color: black;
     height: 100%;
@@ -400,38 +403,38 @@ div h4 {
     grid-template-rows: 3 1fr;
     justify-items: center;
   }
-  .proyecto1 {
+  #pagina-proyecto .proyecto1 {
     grid-area: proyecto1;
   }
-  .proyecto2 {
+  #pagina-proyecto .proyecto2 {
     grid-area: proyecto2;
   }
-  .proyecto3 {
+  #pagina-proyecto .proyecto3 {
     grid-area: proyecto3;
   }
-  .proyecto4 {
+  #pagina-proyecto .proyecto4 {
     grid-area: proyecto4;
   }
-  .proyecto5 {
+  #pagina-proyecto .proyecto5 {
     grid-area: proyecto5;
   }
-  .proyecto6 {
+  #pagina-proyecto .proyecto6 {
     grid-area: proyecto6;
   }
-  div h4 {
+  main section div h4 {
     font-size: 25px;
     height: 35px;
     width: 300px;
     margin: 10px 25px;
     border-radius: 10px;
   }
-  .carrusel-imagen {
+  main section div .carrusel-imagen {
     height: 300px;
     width: 300px;
     padding: 10px;
     margin: 10px 25px;
   }
-  .texto-proyecto {
+  main section .texto-proyecto {
     font-size: 15px;
     height: 410px;
     width: 300px;
@@ -441,30 +444,31 @@ div h4 {
   }
 }
 /*****SERVICIOS*****/
-/*pagina servicios*/
 #servicios {
   display: grid;
   grid-template-areas: "servicio1 servicio2 servicio3";
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 100%;
   align-self: center;
+  justify-items: center;
 }
-.diseño-de-marca {
+#servicios .diseño-de-marca {
   grid-area: servicio1;
 }
-.diseño-de-papeleria {
+#servicios .diseño-de-papeleria {
   grid-area: servicio2;
 }
-.diseño-web {
+#servicios .diseño-web {
   grid-area: servicio3;
 }
-.imagen-servicio {
+
+main section .imagen-servicio {
   height: 300px;
   width: 400px;
   padding: 5px;
   margin: 15px;
 }
-div h3 {
+main section div h3 {
   font-family: "bebas neue";
   font-size: 20px;
   color: black;
@@ -476,20 +480,20 @@ div h3 {
   margin: 15px;
   border-radius: 15px;
 }
-.lista-servicios {
+main section .lista-servicios {
   list-style-type: none;
   color: black;
   background-color: #F4E7EC;
   font-family: "julius";
   font-size: 20px;
   text-align: start;
-  height: 100%;
+  height: 300px;
   width: 400px;
   padding: 15px;
   margin: 15px;
   border-radius: 10px;
 }
-.boton {
+main section div .boton {
   font-family: "julius";
   text-decoration: none;
   background-color: #e8a197;
@@ -500,7 +504,7 @@ div h3 {
   margin: 15px;
   border-radius: 15px;
 }
-.textoboton {
+main section div .boton .textoboton {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -509,47 +513,48 @@ div h3 {
 }
 
 @media (min-width: 700px) and (max-width: 1200px) {
- #servicios {
+  #servicios {
     display: grid;
     grid-template-areas: "servicio1 servicio2 servicio3";
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: 250px, 250px 250px;
     grid-template-rows: 100%;
     align-self: center;
+    justify-items: center;
   }
-  .diseño-de-marca {
+  #servicios .diseño-de-marca {
     grid-area: servicio1;
   }
- .diseño-de-papeleria {
+  #servicios .diseño-de-papeleria {
     grid-area: servicio2;
   }
- .diseño-web {
+  #servicios .diseño-web {
     grid-area: servicio3;
   }
-  .imagen-servicio {
-    height: 200px;
-    width: 300px;
+  main section .imagen-servicio {
+    height: 180px;
+    width: 250px;
     padding: 5px;
-    margin: 15px;
+    margin: 10px;
   }
-  div h3 {
-    width: 300px;
+  main section div h3 {
+    width: 250px;
   }
-  .lista-servicios {
+  main section .lista-servicios {
+    height: 300px;
     font-size: 15px;
-    width: 300px;
+    width: 250px;
   }
-  .boton {
+  main section div .boton {
     height: 30px;
-    width: 300px;
+    width: 250px;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
   }
-  .textoboton {
+  main section div .boton .textoboton {
     font-size: 15px;
   }
 }
-/*pagina servicios*/
 @media (min-width: 320px) and (max-width: 699px) {
   #servicios {
     display: grid;
@@ -558,22 +563,22 @@ div h3 {
     grid-template-rows: 450px 450px 400px;
     justify-items: center;
   }
-  .diseño-de-marca {
+  #servicios .diseño-de-marca {
     grid-area: servicio1;
   }
-  .diseño-de-papeleria {
+  #servicios .diseño-de-papeleria {
     grid-area: servicio2;
   }
-  .diseño-web {
+  #servicios .diseño-web {
     grid-area: servicio3;
   }
-  .imagen-servicio {
+  main section .imagen-servicio {
     height: 200px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
-  div h3 {
+  main section div h3 {
     font-size: 20px;
     height: 25px;
     width: 300px;
@@ -581,7 +586,7 @@ div h3 {
     margin: 5px;
     border-radius: 10px;
   }
-  .lista-servicios {
+  main section .lista-servicios {
     font-size: 12px;
     text-align: start;
     height: 100%;
@@ -590,110 +595,109 @@ div h3 {
     margin: 5px;
     border-radius: 5px;
   }
-  .boton {
+  main section div .boton {
     height: 30px;
     width: 300px;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
   }
-  .textoboton {
+  main section div .boton .textoboton {
     font-size: 15px;
   }
 }
 /*****CONTACTO*****/
-/*pagina de contacto*/
-#main-contactos {
+main #main-contactos {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
-.titulo-contacto {
+main #main-contactos .titulo-contacto {
   font-family: "bebas neue";
   font-size: 25px;
   color: black;
   background-color: #e8a197;
   text-align: center;
   height: 35px;
-  width: 350px;
+  width: 420px;
   padding: 5px;
-  margin: 10px 180px;
+  margin: 10px 20px;
   border-radius: 15px;
 }
-.lista-contacto {
+main #main-contactos nav .lista-contacto {
   list-style-type: none;
   background-color: #F4E7EC;
   font-family: "julius";
-  font-size: 20px;
-  height: 100%;
-  width: 500px;
+  font-size: 18px;
+  height: 400px;
+  width: 430px;
   padding: 15px;
-  margin: 15px 100px;
+  margin: 15px 20px;
   border-radius: 10px;
 }
-.iconos {
-  height: 55px;
-  width: 55px;
+main #main-contactos nav .lista-contacto .iconos {
+  height: 45px;
+  width: 45px;
   padding: 5px;
   margin: 10px;
 }
-.texto6 {
+main #main-contactos nav .lista-contacto .texto6 {
   text-align: start;
   color: black;
   text-decoration: none;
 }
-iframe {
-  height: 440px;
-  width: 500px;
+main #main-contactos div iframe {
+  height: 400px;
+  width: 430px;
   padding: 5px;
-  margin: 5px 100px;
+  margin: 5px 20px;
 }
-form div input {
+main #main-contactos div form div input {
   background-color: #e8a197;
   font-family: "julius";
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 500px;
+  width: 430px;
   padding: 5px;
-  margin: 5px 100px;
+  margin: 5px 20px;
   border-radius: 10px;
   border: #e8a197;
 }
-form div textarea {
+main #main-contactos div form div textarea {
   background-color: #e8a197;
   font-family: "julius";
   font-size: 20px;
   text-align: start;
-  height: 100%;
-  width: 500px;
+  height: 255px;
+  width: 430px;
   padding: 5px;
-  margin: 5px 100px;
+  margin: 5px 20px;
   border-radius: 10px;
   border: #e8a197;
 }
-form div button {
+main #main-contactos div form div button {
   background-color: #e8a197;
   font-family: "julius";
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 500px;
+  width: 430px;
   padding: 5px;
-  margin: 5px 100px;
+  margin: 5px 20px;
   border-radius: 10px;
   border: #e8a197;
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
- #main-contactos {
+  main #main-contactos {
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
-    grid-template-rows: 300px 400px 550px;
+    grid-template-rows: 300px 320px 450px;
     justify-items: center;
   }
-  .titulo-contacto {
+  main #main-contactos .titulo-contacto {
     font-size: 20px;
     height: 35px;
     width: 300px;
@@ -701,43 +705,100 @@ form div button {
     margin: 10px;
     border-radius: 10px;
   }
-  .lista-contacto {
+  main #main-contactos nav .lista-contacto {
     font-size: 12px;
     width: 300px;
     padding: 15px;
     margin: 10px;
   }
-  .iconos {
+  main #main-contactos nav .lista-contacto .iconos {
     height: 30px;
     width: 30px;
     padding: 5px;
     margin: 5px;
   }
-  .texto6 {
+  main #main-contactos nav .lista-contacto .texto6 {
     font-size: 12px;
   }
-  iframe {
+  main #main-contactos div iframe {
     height: 250px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
-  form div input {
+  main #main-contactos div form div input {
     font-size: 15px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
-  form div textarea {
+  main #main-contactos div form div textarea {
     font-size: 15px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
-  form div button {
+  main #main-contactos div form div button {
     font-size: 15px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
 }
+@media (min-width: 700px) and (max-width: 1200px) {
+  main #main-contactos {
+    display: grid;
+    grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-rows: 400px 530px 550px;
+    justify-items: center;
+  }
+  main #main-contactos .titulo-contacto {
+    font-size: 25px;
+    height: 35px;
+    width: 500px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main #main-contactos nav .lista-contacto {
+    font-size: 20px;
+    width: 500px;
+    padding: 15px;
+    margin: 10px;
+  }
+  main #main-contactos nav .lista-contacto .iconos {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos nav .lista-contacto .texto6 {
+    font-size: 20px;
+  }
+  main #main-contactos div iframe {
+    height: 450px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div input {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div textarea {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div button {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
