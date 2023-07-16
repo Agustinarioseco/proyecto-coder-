@@ -33,7 +33,7 @@ header{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            a:hover {
+            &:hover {
                 font-weight: map-get($hover-inicio, weight);
                 padding: map-get($hover-inicio, padding);
                 background-color: map-get($hover-inicio, background);
@@ -79,7 +79,7 @@ main{
                     margin: 25px;
                     opacity: 70%;
                 }
-                a:hover {
+                &:hover {
                     @include hover;
                 }
                 a{
@@ -116,7 +116,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        a:hover {
+        &:hover {
             @include hover;
         }
         a{

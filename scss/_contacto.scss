@@ -1,3 +1,4 @@
+
 main{
     #main-contactos{
         display: flex;
@@ -18,7 +19,7 @@ main{
         }
         nav{
             .lista-contacto {
-                list-style-type: none;
+                list-style-type:none;
                 background-color:$fondo-menu-footer;
                 font-family: $titulos-secundarios;
                 font-size: 18px;
@@ -27,7 +28,7 @@ main{
                 padding: 15px;
                 margin: 15px 20px;
                 border-radius: 10px;
-                a:hover {
+                &:hover {
                     @include hover;
                 }
                 .iconos {
@@ -92,67 +93,6 @@ main{
         }
     }
 }
-@media (min-width: 320px) and (max-width: 699px){
-main{
-    #main-contactos {
-        display: grid;
-        grid-template-areas: "contacto1" "mapa" "formulario";
-        grid-template-rows: 300px 320px 450px;
-        justify-items: center;
-        .titulo-contacto {
-            font-size: $font-20px;
-            height: 35px;
-            width: 300px;
-            padding: 5px;
-            margin: 10px;
-            border-radius: 10px;
-            }
-            nav{
-                .lista-contacto {
-                    font-size: 12px;
-                    width: 300px;
-                    padding: 15px;
-                    margin: 10px;
-                    a:hover {
-                        @include hover;
-                    }
-                    .iconos {
-                        height: 30px;
-                        width: 30px;
-                        padding: 5px;
-                        margin: 5px;
-                    }
-                    .texto6 {
-                        font-size: 12px;
-                    }
-                }
-            }
-        div{
-            iframe{
-                height: 250px;
-                width: 300px;
-                padding: 5px;
-                margin: 5px;
-            }
-        }
-        div{
-            form{
-                div{
-                    input {
-                        @include contactos-form;
-                    }
-                    textarea {
-                        @include contactos-form;
-                    }
-                    button {
-                        @include contactos-form;
-                    }
-                }
-            }
-        }
-    }
-}
-}
 @media (min-width: 700px) and (max-width: 1200px){
 main{
     #main-contactos {
@@ -213,6 +153,68 @@ main{
                         width: 500px;
                         padding: 5px;
                         margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media (min-width: 320px) and (max-width: 699px){
+main{
+    #main-contactos {
+        display: grid;
+        grid-template-areas: "contacto1" "mapa" "formulario";
+        grid-template-rows: 300px 320px 450px;
+        justify-items: center;
+        .titulo-contacto {
+            font-size:$font-20px;
+            height:35px;
+            width:300px;
+            padding:5px;
+            margin:10px;
+            border-radius:10px;
+            }
+            nav{
+                .lista-contacto {
+                    font-size: 12px;
+                    height: 230px;
+                    width: 300px;
+                    padding: 15px;
+                    margin: 10px;
+                    &:hover {
+                        @include hover;
+                    }
+                    .iconos {
+                        height: 30px;
+                        width: 30px;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+                    .texto6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        div{
+            iframe{
+                height: 250px;
+                width: 300px;
+                padding: 5px;
+                margin: 10px;
+            }
+        }
+        div{
+            form{
+                div{
+                    input {
+                        @include contactos-form;
+                    }
+                    textarea {
+                        @include contactos-form;
+                    }
+                    button {
+                        @include contactos-form;
                     }
                 }
             }

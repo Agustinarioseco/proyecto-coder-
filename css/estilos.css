@@ -74,7 +74,7 @@ header nav .menu {
   justify-content: space-between;
   align-items: center;
 }
-header nav .menu a:hover {
+header nav .menu:hover {
   font-weight: lighter;
   padding: 8px;
   background-color: #f6dce6;
@@ -112,7 +112,7 @@ main nav div h2 .listainicio {
   margin: 25px;
   opacity: 70%;
 }
-main nav div h2 a:hover {
+main nav div h2:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -153,7 +153,7 @@ footer .redesfooter {
   flex-direction: row;
   justify-content: space-around;
 }
-footer .redesfooter a:hover {
+footer .redesfooter:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -532,7 +532,7 @@ main section div .boton {
   margin: 15px;
   border-radius: 15px;
 }
-main section div .boton a:hover {
+main section div .boton:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -587,7 +587,7 @@ main section div .boton .textoboton {
     margin: 10px;
     border-radius: 10px;
   }
-  main section div .boton a:hover {
+  main section div .boton:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;
@@ -645,7 +645,7 @@ main section div .boton .textoboton {
     margin: 5px;
     border-radius: 10px;
   }
-  main section div .boton a:hover {
+  main section div .boton:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;
@@ -687,7 +687,7 @@ main #main-contactos nav .lista-contacto {
   margin: 15px 20px;
   border-radius: 10px;
 }
-main #main-contactos nav .lista-contacto a:hover {
+main #main-contactos nav .lista-contacto:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -749,69 +749,6 @@ main #main-contactos div form div button {
   border: #e8a197;
 }
 
-@media (min-width: 320px) and (max-width: 699px) {
-  main #main-contactos {
-    display: grid;
-    grid-template-areas: "contacto1" "mapa" "formulario";
-    grid-template-rows: 300px 320px 450px;
-    justify-items: center;
-  }
-  main #main-contactos .titulo-contacto {
-    font-size: 20px;
-    height: 35px;
-    width: 300px;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  main #main-contactos nav .lista-contacto {
-    font-size: 12px;
-    width: 300px;
-    padding: 15px;
-    margin: 10px;
-  }
-  main #main-contactos nav .lista-contacto a:hover {
-    font-weight: lighter;
-    height: 10px;
-    padding: 1px 10px;
-    background-color: #F4E7EC;
-    opacity: 50%;
-    border-radius: 10px;
-  }
-  main #main-contactos nav .lista-contacto .iconos {
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-    margin: 5px;
-  }
-  main #main-contactos nav .lista-contacto .texto6 {
-    font-size: 12px;
-  }
-  main #main-contactos div iframe {
-    height: 250px;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-  }
-  main #main-contactos div form div input {
-    font-size: 15px;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-  }
-  main #main-contactos div form div textarea {
-    font-size: 15px;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-  }
-  main #main-contactos div form div button {
-    font-size: 15px;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-  }
-}
 @media (min-width: 700px) and (max-width: 1200px) {
   main #main-contactos {
     display: grid;
@@ -873,6 +810,70 @@ main #main-contactos div form div button {
     width: 500px;
     padding: 5px;
     margin: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 699px) {
+  main #main-contactos {
+    display: grid;
+    grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-rows: 300px 320px 450px;
+    justify-items: center;
+  }
+  main #main-contactos .titulo-contacto {
+    font-size: 20px;
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main #main-contactos nav .lista-contacto {
+    font-size: 12px;
+    height: 230px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+  }
+  main #main-contactos nav .lista-contacto:hover {
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border-radius: 10px;
+  }
+  main #main-contactos nav .lista-contacto .iconos {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos nav .lista-contacto .texto6 {
+    font-size: 12px;
+  }
+  main #main-contactos div iframe {
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+  }
+  main #main-contactos div form div input {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+  }
+  main #main-contactos div form div textarea {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+  }
+  main #main-contactos div form div button {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
   }
 }
 
