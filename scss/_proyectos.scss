@@ -1,0 +1,173 @@
+#pagina-proyecto{
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 2 1fr;
+    justify-items: center;
+    .proyecto1 {
+        grid-area: proyecto1;
+    }
+    .proyecto2 {
+        grid-area: proyecto2;
+    }
+    .proyecto3 {
+        grid-area: proyecto3;
+    }
+    .proyecto4 {
+        grid-area: proyecto4;
+    }
+    .proyecto5 {
+        grid-area: proyecto5;
+    }
+    .proyecto6 {
+        grid-area: proyecto6;
+    }
+}
+main{
+    section{
+        div{
+            h4{
+                font-family: $titulos-importantes;
+                font-size: 30px;
+                color: $textos-secundarios;
+                background-color: $fondo-listas;
+                text-align: center;
+                height: 40px;
+                width: 350px;
+                padding: 5px;
+                margin: 10px 50px;
+                border-radius: 15px;
+            }
+        }
+        div{
+            .carrusel-imagen {
+                @include proyecto-sizes;
+            }
+        }
+        .texto-proyecto {
+            @include proyecto-sizes;
+            font-family: $titulos-secundarios;
+            font-size: $font-15px;
+            color: $textos-secundarios;
+            background-color:$fondo-menu-footer;
+            text-align: center;
+            border-radius: 15px;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 699px){
+    #pagina-proyecto {
+        display: grid;
+        grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: 6 1fr;
+        justify-items: center;
+        .proyecto1 {
+           grid-area: proyecto1;
+        }
+        .proyecto2 {
+          grid-area: proyecto2;
+        }
+        .proyecto3 {
+            grid-area: proyecto3;
+        }
+        .proyecto4 {
+            grid-area: proyecto4;
+        }
+        .proyecto5 {
+            grid-area: proyecto5;
+        }
+        .proyecto6 {
+            grid-area: proyecto6;
+        }
+    }
+    main{
+        section{
+            div{
+                h4{
+                 font-size: $font-20px;
+                 width: 300px;
+                 height: 25px;
+                 padding: 3px;
+                 margin: 10px;
+                 border-radius: 10px;
+                }
+            }
+            div{
+                .carrusel-imagen {
+                    height: 300px;
+                    width: 300px;
+                    padding: 10px;
+                    margin: 10px;
+                }
+            }
+            div{
+                .texto-proyecto {
+                    font-size: 12px;
+                    color: $titulos-secundarios;
+                    height: 100%;
+                    width: 300px;
+                    padding: 3px;
+                    margin: 10px;
+                    border-radius: 10px;
+                }
+            }
+        }  
+    }
+}
+@media (min-width: 700px) and (max-width: 1200px){
+    #pagina-proyecto {
+        display: grid;
+        grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6";
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: 3 1fr;
+        justify-items: center;
+        .proyecto1 {
+            grid-area: proyecto1;
+        }
+        .proyecto2 {
+            grid-area: proyecto2;
+        }
+        .proyecto3 {
+            grid-area: proyecto3;
+        }
+        .proyecto4 {
+            grid-area: proyecto4;
+        }
+        .proyecto5 {
+            grid-area: proyecto5;
+        }
+        .proyecto6 {
+            grid-area: proyecto6;
+        }
+    }
+    main {
+        section{
+            div{
+                h4 {
+                    font-size: 25px;
+                    height: 35px;
+                    width: 300px;
+                    margin: 10px 25px;
+                    border-radius: 10px;
+                }
+            }
+            div{
+                .carrusel-imagen {
+                    height: 300px;
+                    width: 300px;
+                    padding: 10px;
+                    margin: 10px 25px;
+                }
+            }
+            .texto-proyecto{
+                font-size: $font-15px;
+                height: 410px;
+                width: 300px;
+                padding: 5px;
+                margin: 10px 25px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

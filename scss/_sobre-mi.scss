@@ -1,0 +1,49 @@
+main{
+    #sobremi-main{
+        overflow-x: hidden;
+        display: grid;
+        grid-template-areas: "carrusel parrafo";
+        grid-template-columns: repeat(2 1fr);
+    }
+    div{
+        .carrusel{
+            @include carrusel-sobre-mi;
+        }
+    }
+    .parrafo{
+        grid-area: parrafo;
+        overflow:map-get($parrafo, overflow);
+        font-family:map-get($parrafo, font);
+        color:map-get($parrafo, color);
+        background-color:map-get($parrafo, background);
+        font-size:map-get($parrafo, size);
+        width:map-get($parrafo, width);
+        padding:map-get($parrafo, padding);
+        margin:map-get($parrafo, margin);
+        border-radius:map-get($parrafo, border);
+    }
+}
+@media (min-width: 320px) and (max-width: 699px){
+    main{
+        #sobremi-main {
+            display: grid;
+            grid-template-areas: "carrusel" "parrafo";
+            grid-template-rows: repeat(2 1fr);
+            justify-items: center;
+        }
+        div{
+            .carrusel {
+                @include carrusel-sobre-mi;
+                width: 300px;
+            }
+        }
+        .parrafo {
+            grid-area: parrafo;
+            font-size: 12px;
+            width: 300px;
+            padding: 5px;
+            margin: 10px;
+            border-radius:15px;
+        }
+    }
+}

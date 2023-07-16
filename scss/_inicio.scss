@@ -1,0 +1,243 @@
+  /*menu de incio*/
+  #header{
+    overflow: hidden;
+    background-color: $fondo-menu-footer;
+    display: grid;
+    grid-template-areas: "imagen-logo menu";
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 135px;
+}
+header{
+    section{
+        a{
+            .imagen-logo {
+                grid-area: imagen-logo;
+                background-color:map-get($logo, background);
+                height:map-get($logo, height);
+                width:map-get($logo, width);
+                padding:map-get($logo, padding);
+                margin:map-get($logo, margin);
+            }
+        }
+    }
+    nav{
+        .menu{
+            text-decoration: none;
+            list-style-type: none;
+            overflow: hidden;
+            grid-area: menu;
+            height: 140px;
+            padding: 40px 10px;
+            margin: 10px 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            a:hover {
+                font-weight: map-get($hover-inicio, weight);
+                padding: map-get($hover-inicio, padding);
+                background-color: map-get($hover-inicio, background);
+                color: map-get($hover-inicio, color);
+            }
+            .textomenu {
+                font-family:$titulos-importantes;
+                font-size: 25px;
+                padding: 40px 10px;
+                margin: 1px;
+                text-decoration: none;
+                color:$textos-importantes;
+            }
+        }
+    }
+}
+/*frase inicio*/
+/*listas de la pagina de incio*/
+main{
+    div{
+        h2{
+            color: $textos-secundarios;
+            font-family:$titulos-secundarios;
+            font-size: 30px;
+            overflow: hidden;
+            background-color:$fondo-listas;
+            opacity: 70%;
+            text-align: center;
+            height: 100px;
+            padding: 30px;
+            margin: 25px 50px;
+            border-radius: 30px;
+        }
+    }
+    nav{
+        div{
+            h2{
+                .listainicio{
+                    background-color:$fondo-listas;
+                    color: $textos-secundarios;
+                    height: 90px;
+                    padding: 25px;
+                    margin: 25px;
+                    opacity: 70%;
+                }
+                a:hover {
+                    @include hover;
+                }
+                a{
+                    text-decoration: none;
+                    color: $textos-secundarios;
+                    font-family:$titulos-secundarios;
+                    font-size: 30px;
+                    overflow: hidden;
+                    text-align: center;
+                    height: 100px;
+                    padding: 10px;
+                    margin: 25px 50px;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+} 
+  /*pie de pagina*/
+footer {
+    overflow: hidden;
+    background-color: $fondo-menu-footer;
+    opacity: 80%;
+    h6 {
+        font-family:$titulos-importantes;
+        color:$textos-importantes;
+        text-align: center;
+        width: 100%;
+        font-size: 45px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .redesfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        a:hover {
+            @include hover;
+        }
+        a{
+            .footerr{
+                @include sizes-iconos;
+            }
+        }
+    }
+    .pie-de-pagina{
+        font-family:$titulos-secundarios;
+        color:$textos-secundarios;
+        font-size: $font-20px;
+        text-align: center;
+        width: 100%;
+        padding: 30px 5px 5px;
+        margin: 10px;
+    }
+} 
+@media (min-width: 320px) and (max-width: 699px) {
+  #grilla {
+      overflow-x: hidden;
+      display: grid;
+      grid-template-areas: "header" "main" "footer";
+      grid-template-columns: 100%;
+    }
+  .header {
+      grid-area: header;
+    }
+  .main {
+      grid-area: main;
+    }
+  .footer {
+      grid-area: footer;
+    }
+/*menu de incio*/
+#header {
+    background-color: $fondo-menu-footer;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "imagen-logo" "menu";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 40px;
+    justify-items: center;
+}
+header{
+    section{
+        .imagen-logo {
+            grid-area: imagen-logo;
+            background-color: $fondo-menu-footer;
+            height: 120px;
+            width: 120px;
+            padding: 5px 1px 1px;
+        }
+    }
+    nav{
+        .menu {
+            grid-area: menú;
+            justify-items: start;
+            height: 40px;
+            padding: 15px;
+            margin: 1px 5px;
+            .textomenu {
+                grid-area: menu;
+                justify-items: start;
+                font-size: 12px;
+                padding: 5px 9px;
+            }
+            a:hover {
+                @include hover;
+            }
+        }
+    }
+}
+ /*frase inicio*/
+ /*listas de la pagina de incio*/
+main{
+    div{
+        h2{
+            font-size:$font-20px;
+            height: 60px;
+            padding: 10px;
+            margin: 15px 20px;
+            border-radius: 15px;
+        }
+    }
+    nav{
+        div{
+            h2{
+                .listainicio{
+                    height: 60px;
+                    padding: 20px;
+                    margin: 20px;
+                    border-radius: 20px;
+                }
+                a{
+                    color:$textos-secundarios;
+                    font-family:$titulos-secundarios;
+                    font-size: $font-15px;
+                    text-align: center;
+                    height: 20px;
+                    padding: 20px;
+                    margin: 25px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+} 
+/*pie de pagina*/
+footer{
+    h6{
+        font-size: 25px;
+    }
+    .footerr{
+        height: 35px;
+        width: 35px;
+    }
+    .pie-de-pagina {
+        font-size: 12px;
+        padding: 10px 5px 5px;
+        margin: 10px 10px 5px;
+    }
+} 
+}

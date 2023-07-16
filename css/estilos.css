@@ -29,6 +29,11 @@ body {
   grid-area: footer;
 }
 
+/*colores*/
+/*fuentes*/
+/*size*/
+/*mixins*/
+/*maps*/
 @font-face {
   font-family: "julius";
   src: url(../fonts/JuliusSansOne-Regular.ttf);
@@ -107,6 +112,14 @@ main nav div h2 .listainicio {
   margin: 25px;
   opacity: 70%;
 }
+main nav div h2 a:hover {
+  font-weight: lighter;
+  height: 10px;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border-radius: 10px;
+}
 main nav div h2 a {
   text-decoration: none;
   color: black;
@@ -140,9 +153,19 @@ footer .redesfooter {
   flex-direction: row;
   justify-content: space-around;
 }
+footer .redesfooter a:hover {
+  font-weight: lighter;
+  height: 10px;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border-radius: 10px;
+}
 footer .redesfooter a .footerr {
   height: 45px;
   width: 45px;
+  padding: 5px;
+  margin: 5px;
 }
 footer .pie-de-pagina {
   font-family: "julius";
@@ -201,7 +224,12 @@ footer .pie-de-pagina {
     padding: 5px 9px;
   }
   header nav .menu a:hover {
-    padding: 5px;
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border-radius: 10px;
   }
   /*frase inicio*/
   /*listas de la pagina de incio*/
@@ -254,8 +282,8 @@ main div .carrusel {
   margin: 10px;
 }
 main .parrafo {
-  overflow: hidden;
   grid-area: parrafo;
+  overflow: hidden;
   font-family: "julius";
   color: black;
   background-color: #F4E7EC;
@@ -275,8 +303,8 @@ main .parrafo {
   }
   main div .carrusel {
     grid-area: carrusel;
-    width: 300px;
     margin: 10px;
+    width: 300px;
   }
   main .parrafo {
     grid-area: parrafo;
@@ -333,15 +361,15 @@ main section div .carrusel-imagen {
   margin: 10px 50px;
 }
 main section .texto-proyecto {
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  margin: 10px 50px;
   font-family: "julius";
   font-size: 15px;
   color: black;
   background-color: #F4E7EC;
   text-align: center;
-  height: 350px;
-  width: 350px;
-  padding: 5px;
-  margin: 10px 50px;
   border-radius: 15px;
 }
 
@@ -387,7 +415,7 @@ main section .texto-proyecto {
   }
   main section div .texto-proyecto {
     font-size: 12px;
-    color: black;
+    color: "julius";
     height: 100%;
     width: 300px;
     padding: 3px;
@@ -500,9 +528,17 @@ main section div .boton {
   text-align: center;
   height: 40px;
   width: 400px;
-  padding: 10px;
+  padding: 5px;
   margin: 15px;
   border-radius: 15px;
+}
+main section div .boton a:hover {
+  font-weight: lighter;
+  height: 10px;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border-radius: 10px;
 }
 main section div .boton .textoboton {
   text-decoration: none;
@@ -551,6 +587,14 @@ main section div .boton .textoboton {
     margin: 10px;
     border-radius: 10px;
   }
+  main section div .boton a:hover {
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border-radius: 10px;
+  }
   main section div .boton .textoboton {
     font-size: 15px;
   }
@@ -579,27 +623,34 @@ main section div .boton .textoboton {
     margin: 5px;
   }
   main section div h3 {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
     font-size: 20px;
     height: 25px;
+    border-radius: 10px;
+  }
+  main section .lista-servicios {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    text-align: start;
+    height: 100%;
+    border-radius: 5px;
+  }
+  main section div .boton {
     width: 300px;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
   }
-  main section .lista-servicios {
-    font-size: 12px;
-    text-align: start;
-    height: 100%;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-  }
-  main section div .boton {
-    height: 30px;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
+  main section div .boton a:hover {
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
     border-radius: 10px;
   }
   main section div .boton .textoboton {
@@ -636,11 +687,19 @@ main #main-contactos nav .lista-contacto {
   margin: 15px 20px;
   border-radius: 10px;
 }
+main #main-contactos nav .lista-contacto a:hover {
+  font-weight: lighter;
+  height: 10px;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border-radius: 10px;
+}
 main #main-contactos nav .lista-contacto .iconos {
   height: 45px;
   width: 45px;
   padding: 5px;
-  margin: 10px;
+  margin: 5px;
 }
 main #main-contactos nav .lista-contacto .texto6 {
   text-align: start;
@@ -711,6 +770,14 @@ main #main-contactos div form div button {
     padding: 15px;
     margin: 10px;
   }
+  main #main-contactos nav .lista-contacto a:hover {
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border-radius: 10px;
+  }
   main #main-contactos nav .lista-contacto .iconos {
     height: 30px;
     width: 30px;
@@ -749,7 +816,7 @@ main #main-contactos div form div button {
   main #main-contactos {
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
-    grid-template-rows: 400px 530px 550px;
+    grid-template-rows: 480px 530px 550px;
     justify-items: center;
   }
   main #main-contactos .titulo-contacto {
@@ -765,6 +832,14 @@ main #main-contactos div form div button {
     width: 500px;
     padding: 15px;
     margin: 10px;
+  }
+  main #main-contactos nav .lista-contacto a:hover {
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border-radius: 10px;
   }
   main #main-contactos nav .lista-contacto .iconos {
     height: 45px;

@@ -1,0 +1,78 @@
+/*colores*/
+$fondo-listas: #e8a197;
+$fondo-menu-footer: #F4E7EC;
+$textos-importantes: #918f91;
+$textos-secundarios: black;
+
+/*fuentes*/
+$titulos-importantes: "bebas neue";
+$titulos-secundarios: "julius";
+
+/*size*/
+$font-20px: 20px;
+$font-15px: 15px;
+
+/*mixins*/
+@mixin sizes-iconos{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    margin: 5px;
+}
+@mixin carrusel-sobre-mi{
+    grid-area: carrusel;
+    margin: 10px;
+}
+@mixin hover{
+    font-weight: lighter;
+    height: 10px;
+    padding: 1px 10px;
+    background-color:$fondo-menu-footer;
+    opacity: 50%;
+    border-radius: 10px;
+}
+@mixin proyecto-sizes{
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px 50px;
+}
+@mixin servicios-size{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+@mixin contactos-form{
+    font-size:$font-15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*maps*/
+$logo: (
+    background: $fondo-menu-footer,
+    height: 130px,
+    width: 130px,
+    padding: 2px,
+    margin: 2px,
+);
+
+$hover-inicio: (
+    weight: lighter,
+    padding: 8px,
+    background: #f6dce6,
+    color:$textos-importantes
+);
+$parrafo: (
+    overflow: hidden,
+    font:$titulos-secundarios,
+    color:$textos-secundarios,
+    background:$fondo-menu-footer,
+    size:$font-20px,
+    width:700px,
+    padding:5px,
+    margin:10px,
+    border:25px,
+);
+
