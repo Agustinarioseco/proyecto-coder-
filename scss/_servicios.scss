@@ -61,7 +61,7 @@ main {
                 padding: 5px;
                 margin: 15px;
                 border-radius: 15px;
-                &:hover {
+                a:hover {
                     @include hover;
                 }
                 .textoboton {
@@ -118,7 +118,7 @@ main {
                     padding: 5px;
                     margin: 10px;
                     border-radius: 10px;
-                    &:hover {
+                    a:hover {
                         @include hover;
                     }
                     .textoboton {
@@ -172,7 +172,7 @@ main {
                 .boton {
                     @include servicios-size;
                     border-radius: 10px;
-                    &:hover {
+                    a:hover {
                         @include hover;
                     }
                     .textoboton {

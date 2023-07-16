@@ -74,11 +74,9 @@ header nav .menu {
   justify-content: space-between;
   align-items: center;
 }
-header nav .menu:hover {
-  font-weight: lighter;
+header nav .menu a:hover {
   padding: 8px;
   background-color: #f6dce6;
-  color: #918f91;
 }
 header nav .menu .textomenu {
   font-family: "bebas neue";
@@ -112,7 +110,7 @@ main nav div h2 .listainicio {
   margin: 25px;
   opacity: 70%;
 }
-main nav div h2:hover {
+main nav div h2 a:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -153,7 +151,7 @@ footer .redesfooter {
   flex-direction: row;
   justify-content: space-around;
 }
-footer .redesfooter:hover {
+footer .redesfooter a:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -532,7 +530,7 @@ main section div .boton {
   margin: 15px;
   border-radius: 15px;
 }
-main section div .boton:hover {
+main section div .boton a:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -587,7 +585,7 @@ main section div .boton .textoboton {
     margin: 10px;
     border-radius: 10px;
   }
-  main section div .boton:hover {
+  main section div .boton a:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;
@@ -645,7 +643,7 @@ main section div .boton .textoboton {
     margin: 5px;
     border-radius: 10px;
   }
-  main section div .boton:hover {
+  main section div .boton a:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;
@@ -687,7 +685,7 @@ main #main-contactos nav .lista-contacto {
   margin: 15px 20px;
   border-radius: 10px;
 }
-main #main-contactos nav .lista-contacto:hover {
+main #main-contactos nav .lista-contacto a:hover {
   font-weight: lighter;
   height: 10px;
   padding: 1px 10px;
@@ -834,7 +832,7 @@ main #main-contactos div form div button {
     padding: 15px;
     margin: 10px;
   }
-  main #main-contactos nav .lista-contacto:hover {
+  main #main-contactos nav .lista-contacto a:hover {
     font-weight: lighter;
     height: 10px;
     padding: 1px 10px;
