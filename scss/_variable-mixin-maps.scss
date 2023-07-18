@@ -1,14 +1,18 @@
+
 /*colores*/
 $fondo-listas: #e8a197;
 $fondo-menu-footer: #F4E7EC;
 $textos-importantes: #918f91;
 $textos-secundarios: black;
+
 /*fuentes*/
 $titulos-importantes: "bebas neue";
 $titulos-secundarios: "julius";
+
 /*size*/
 $font-20px: 20px;
 $font-15px: 15px;
+
 /*mixins*/
 @mixin sizes-iconos{
     height: 45px;
