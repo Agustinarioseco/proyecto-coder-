@@ -1,0 +1,35 @@
+/*mixins*/
+@mixin sizes-iconos{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    margin: 5px;
+}
+@mixin carrusel-sobre-mi{
+    grid-area: carrusel;
+    margin: 10px;
+}
+@mixin hover{
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color:$fondo-menu-footer;
+    opacity: 50%;
+    border: 10px;
+}
+@mixin proyecto-sizes{
+    height: 350px;
+    width: 350px;
+    padding: 10px;
+    margin: 10px 50px;
+}
+@mixin servicios-size{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+@mixin contactos-form{
+    font-size:$font-15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+}
