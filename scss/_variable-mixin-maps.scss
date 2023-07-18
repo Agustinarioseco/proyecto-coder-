@@ -3,15 +3,12 @@ $fondo-listas: #e8a197;
 $fondo-menu-footer: #F4E7EC;
 $textos-importantes: #918f91;
 $textos-secundarios: black;
-
 /*fuentes*/
 $titulos-importantes: "bebas neue";
 $titulos-secundarios: "julius";
-
 /*size*/
 $font-20px: 20px;
 $font-15px: 15px;
-
 /*mixins*/
 @mixin sizes-iconos{
     height: 45px;
@@ -47,7 +44,6 @@ $font-15px: 15px;
     padding: 5px;
     margin: 5px 10px;
 }
-
 /*maps*/
 $logo: (
     background: $fondo-menu-footer,
@@ -56,7 +52,6 @@ $logo: (
     padding: 2px,
     margin: 2px,
 );
-
 $hover-inicio: (
     weight: lighter,
     padding: 8px,
@@ -74,5 +69,3 @@ $parrafo: (
     margin:10px,
     border:25px,
 );
-
-
