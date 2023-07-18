@@ -1,0 +1,58 @@
+#pagina-proyecto{
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 2 1fr;
+    justify-items: center;
+    .proyecto1 {
+        grid-area: proyecto1;
+    }
+    .proyecto2 {
+        grid-area: proyecto2;
+    }
+    .proyecto3 {
+        grid-area: proyecto3;
+    }
+    .proyecto4 {
+        grid-area: proyecto4;
+    }
+    .proyecto5 {
+        grid-area: proyecto5;
+    }
+    .proyecto6 {
+        grid-area: proyecto6;
+    }
+}
+main{
+    section{
+        div{
+            h4{
+                font-family: $titulos-importantes;
+                font-size: 30px;
+                color: $textos-secundarios;
+                background-color: $fondo-listas;
+                text-align: center;
+                height: 40px;
+                width: 350px;
+                padding: 5px;
+                margin: 10px 50px;
+                border-radius: 15px;
+            }
+        }
+        div{
+            .carrusel-imagen {
+                @include proyecto-sizes;
+            }
+        }
+        .texto-proyecto {
+            @include proyecto-sizes;
+            font-family: $titulos-secundarios;
+            font-size: $font-15px;
+            color: $textos-secundarios;
+            background-color:$fondo-menu-footer;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: 600;
+        }
+    }
+}

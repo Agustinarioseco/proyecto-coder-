@@ -1,36 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-body{
-  background-image: url(../img/fondo1.png);
-  background-size:cover;
-}    
-  /*maqueta pagina principal*/
-  #grilla {
-    overflow-x: hidden;
-    display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-columns: 100%;
-  }
-  .header {
-    grid-area: header;
-  }
-  .main {
-    grid-area: main;
-  }
-  .footer {
-    grid-area: footer;
-  }
-@import "variable-mixin-maps";
-@import "fonts";
-  /******INDEX******/
-@import "inicio";
+
+@import "elementos/variable-mixin-maps";
+@import "elementos/fonts";
+@import "elementos/condicional";
+/******ESTRUCTURA******/
+@import "estructura/body";
+/******INDEX******/
+@import "estructura/inicio";
+@import "medias-querys/inicio-mediaquerys";
 /******SOBRE MI******/
-@import "sobre-mi";
+@import "estructura/sobre-mi";
+@import "medias-querys/sobremi-mediaquerys";
 /*****PROYECTOS*****/
-@import "proyectos";
+@import "estructura/proyectos";
+@import "medias-querys/proyectos-mediaquerys";
 /*****SERVICIOS*****/
-@import "servicios";
+@import "estructura/servicios";
+@import "medias-querys/servicios-mediaquerys";
 /*****CONTACTO*****/
-@import "contacto";
+@import "estructura/contacto";
+@import "medias-querys/contacto-mediaquerys";

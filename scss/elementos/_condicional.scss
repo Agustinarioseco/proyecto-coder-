@@ -1,0 +1,19 @@
+
+$vista: mobile;
+$vista: body;
+
+@if $vista == mobile{
+    body{
+      @media(min-width: 320px) and (max-width: 699px){
+          background-image:url(../img/fondo-2.png);
+          background-size:cover;
+        }
+    }
+} 
+@else if $vista == body{
+    body{
+          background-image: url(../img/fondo1.png);
+          background-size:cover;   
+    }
+} 
+  

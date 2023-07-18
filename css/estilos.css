@@ -1,34 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(../img/fondo1.png);
-  background-size: cover;
-}
-
-/*maqueta pagina principal*/
-#grilla {
-  overflow-x: hidden;
-  display: grid;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-columns: 100%;
-}
-
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
 /*colores*/
 /*fuentes*/
 /*size*/
@@ -42,6 +12,34 @@ body {
   font-family: "bebas neue";
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
+body {
+  background-image: url(../img/fondo1.png);
+  background-size: cover;
+}
+
+/******ESTRUCTURA******/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*maqueta pagina principal*/
+body #grilla {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+}
+body #grilla .header {
+  grid-area: header;
+}
+body #grilla .main {
+  grid-area: main;
+}
+body #grilla .footer {
+  grid-area: footer;
+}
+
 /******INDEX******/
 /*menu de incio*/
 #header {

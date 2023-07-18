@@ -1,0 +1,95 @@
+
+main{
+    #main-contactos{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: start;
+        .titulo-contacto {
+            font-family: $titulos-importantes;
+            font-size: 25px;
+            color: $textos-secundarios;
+            background-color: $fondo-listas;
+            text-align: center;
+            height: 35px;
+            width: 420px;
+            padding: 5px;
+            margin: 10px 20px;
+            border-radius: 15px;
+        }
+        nav{
+            .lista-contacto {
+                list-style-type:none;
+                background-color:$fondo-menu-footer;
+                font-family: $titulos-secundarios;
+                font-size: 18px;
+                height: 400px;
+                width: 430px;
+                padding: 15px;
+                margin: 15px 20px;
+                border-radius: 10px;
+                .iconos {
+                   @include sizes-iconos;
+                }
+                .texto6 {
+                    text-align: start;
+                    color: $textos-secundarios;
+                    text-decoration: none;
+                    &:hover {
+                        @include hover;
+                    }
+                }
+            }
+        }
+        div{
+            iframe {
+                height: 400px;
+                width: 430px;
+                padding: 5px;
+                margin: 5px 20px;
+            }
+        }
+        div{
+            form{
+                div{
+                    input {
+                        background-color: $fondo-listas;
+                        font-family: $titulos-secundarios;
+                        font-size: $font-20px;
+                        text-align: center;
+                        height: 100%;
+                        width: 430px;
+                        padding: 5px;
+                        margin: 5px 20px;
+                        border-radius: 10px;
+                        border: $fondo-listas;
+                    }
+                    textarea {
+                        background-color:$fondo-listas;
+                        font-family: $titulos-secundarios;
+                        font-size: $font-20px;
+                        text-align: start;
+                        height: 255px;
+                        width: 430px;
+                        padding: 5px;
+                        margin: 5px 20px;
+                        border-radius: 10px;
+                        border: $fondo-listas;
+                    }
+                    button {
+                        background-color:$fondo-listas;
+                        font-family:$titulos-secundarios;
+                        font-size: $font-20px;
+                        text-align: center;
+                        height: 100%;
+                        width: 430px;
+                        padding: 5px;
+                        margin: 5px 20px;
+                        border-radius: 10px;
+                        border: $fondo-listas;
+                    }
+                } 
+            } 
+        }
+    }
+}

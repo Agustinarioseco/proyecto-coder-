@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*maqueta pagina principal*/
+  body{
+    #grilla {
+          overflow-x: hidden;
+          display: grid;
+         grid-template-areas: "header" "main" "footer";
+         grid-template-columns: 100%;
+        .header {
+         grid-area: header;
+        }
+        .main {
+          grid-area: main;
+        }
+        .footer {
+            grid-area: footer;
+        }
+   }
+}
+  
+  

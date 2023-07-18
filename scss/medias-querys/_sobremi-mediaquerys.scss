@@ -1,0 +1,24 @@
+@media (min-width: 320px) and (max-width: 699px){
+    main{
+        #sobremi-main {
+            display: grid;
+            grid-template-areas: "carrusel" "parrafo";
+            grid-template-rows: repeat(2 1fr);
+            justify-items: center;
+        }
+        div{
+            .carrusel {
+                @include carrusel-sobre-mi;
+                width: 300px;
+            }
+        }
+        .parrafo {
+            grid-area: parrafo;
+            font-size: 12px;
+            width: 300px;
+            padding: 5px;
+            margin: 10px;
+            border-radius:15px;
+        }
+    }
+}
