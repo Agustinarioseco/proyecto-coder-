@@ -21,5 +21,6 @@ main{
         padding:map-get($parrafo, padding);
         margin:map-get($parrafo, margin);
         border-radius:map-get($parrafo, border);
+        font-weight: 600;
     }
 }

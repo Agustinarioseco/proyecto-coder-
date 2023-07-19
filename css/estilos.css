@@ -286,6 +286,7 @@ main .parrafo {
   padding: 5px;
   margin: 10px;
   border-radius: 25px;
+  font-weight: 600;
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
@@ -304,6 +305,27 @@ main .parrafo {
     grid-area: parrafo;
     font-size: 12px;
     width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  main #sobremi-main {
+    display: grid;
+    grid-template-areas: "carrusel" "parrafo";
+    grid-template-rows: repeat(2 1fr);
+    justify-items: center;
+  }
+  main div .carrusel {
+    grid-area: carrusel;
+    margin: 10px;
+    width: 650px;
+  }
+  main .parrafo {
+    grid-area: parrafo;
+    font-size: 15px;
+    width: 650px;
     padding: 5px;
     margin: 10px;
     border-radius: 15px;
@@ -489,7 +511,7 @@ main section .imagen-servicio {
   height: 300px;
   width: 400px;
   padding: 5px;
-  margin: 15px;
+  margin: 10px;
 }
 main section div h3 {
   font-family: "bebas neue";
@@ -500,10 +522,11 @@ main section div h3 {
   height: 35px;
   width: 400px;
   padding: 5px;
-  margin: 15px;
+  margin: 10px;
   border-radius: 15px;
 }
 main section .lista-servicios {
+  font-weight: 600;
   list-style-type: none;
   color: black;
   background-color: #F4E7EC;
@@ -513,7 +536,7 @@ main section .lista-servicios {
   height: 300px;
   width: 400px;
   padding: 15px;
-  margin: 15px;
+  margin: 10px;
   border-radius: 10px;
 }
 main section div .boton {
@@ -524,11 +547,12 @@ main section div .boton {
   height: 40px;
   width: 400px;
   padding: 5px;
-  margin: 15px;
+  margin: 10px;
   border-radius: 15px;
 }
 main section div .boton .textoboton {
   text-decoration: none;
+  font-weight: 600;
   color: black;
   font-size: 20px;
   padding: 1px;
@@ -542,7 +566,7 @@ main section div .boton .textoboton:hover {
   border: 10px;
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   #servicios {
     display: grid;
     grid-template-areas: "servicio1 servicio2 servicio3";
@@ -592,12 +616,12 @@ main section div .boton .textoboton:hover {
     border: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 699px) {
+@media (min-width: 320px) and (max-width: 799px) {
   #servicios {
     display: grid;
     grid-template-areas: "servicio1" "servicio2" "servicio3";
     grid-template-columns: 1fr;
-    grid-template-rows: 450px 450px 400px;
+    grid-template-rows: 470px 450px 400px;
     justify-items: center;
   }
   #servicios .diseño-de-marca {

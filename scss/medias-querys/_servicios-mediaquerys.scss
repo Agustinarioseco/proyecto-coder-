@@ -1,4 +1,4 @@
-@media (min-width: 700px) and (max-width: 1200px){
+@media (min-width: 800px) and (max-width: 1200px){
     #servicios {
         display: grid;
         grid-template-areas: "servicio1 servicio2 servicio3";
@@ -53,12 +53,12 @@
         
     }
 }
-  @media (min-width: 320px) and (max-width: 699px){
+  @media (min-width: 320px) and (max-width: 799px){
     #servicios {
         display: grid;
         grid-template-areas: "servicio1" "servicio2" "servicio3";
         grid-template-columns: 1fr;
-        grid-template-rows: 450px 450px 400px;
+        grid-template-rows: 470px 450px 400px;
         justify-items: center;
         .diseño-de-marca{
           grid-area: servicio1;
